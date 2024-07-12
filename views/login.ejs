@@ -1,0 +1,26 @@
+<%- include('./partials/header') %>
+  <!--  -->
+  <%- include('./partials/nav') %>
+    <!--  -->
+    <div id="main" class="h-screen w-screen flex flex-col">
+
+      <!-- <div id="page" class="h-full w-full  mt-[4.5%] flex flex-col items-center justify-center  border-2 border-grey-400"> -->
+        <div id="page"
+      class="h-full w-full mt-[4.5%] flex flex-col items-center text-center items-center justify-center border-2 border-grey-400">
+        <h1 class="text-4xl mb-5">Login User</h1>
+   
+        <form action="/profile" method="post" class="h-4/6 w-1/4 flex flex-col gap-y-4 mt-5">
+            <input class="border-2 rounded-md p-2" type="text" name="username" placeholder="Username">
+            <input class="border-2 rounded-md p-2" type="password" name="password" placeholder="Password">
+            <a href="/forgot-password" class="text-red-400 text-right font-semibold hover:text-red-600">Forgot Password? </a>
+            <button class="bg-blue-400 p-1 rounded-lg font-semibold text-white hover:bg-blue-600">Log in</button>
+            <hr>
+            <p class="text-center">Don't have an account? <a href="/register" class="text-blue-400 font-semibold hover:text-blue-600">Register</a></p>
+            </form>
+
+
+      </div>
+    </div>
+
+    <!--  -->
+    <%- include('./partials/footer') %>
